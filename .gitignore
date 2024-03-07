@@ -1,0 +1,38 @@
+﻿# Environment variables
+.env
+
+# Build outputs
+bin/
+obj/
+
+# Dependency directories
+node_modules/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE-specific directories
+.vs/
+.vscode/
+
+# Publish output
+publish/
+
+# ASP.NET Core generated files
+# Properties/launchSettings.json
+
+# Generated certificate files
+*.pfx
+*.cer
+
+# Application settings
+# appsettings.json
+# appsettings.*.json
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.log
