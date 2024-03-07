@@ -1,5 +1,6 @@
 ﻿# Environment variables
 .env
+appsettings.json
 
 # Build outputs
 bin/
