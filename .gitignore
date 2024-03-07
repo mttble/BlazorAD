@@ -1,6 +1,6 @@
 ﻿# Environment variables
 .env
-appsettings.json
+*appsettings.json
 
 # Build outputs
 bin/
