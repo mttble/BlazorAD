@@ -15,4 +15,15 @@ builder.Services.AddMsalAuthentication(options =>
     options.ProviderOptions.LoginMode = "redirect";
 });
 
+builder.Services.AddAuthorizationCore(options =>
+{
+    options.AddPolicy("mattdev", policy =>
+    {
+        policy.RequireAssertion(context => context.User.HasClaim(c =>
+        {
+            return c.Type == "groups" && c.Value.Contains(builder.Configuration["groups:mattdevid"]);
+        }));
+    });
+});
+
 await builder.Build().RunAsync();
